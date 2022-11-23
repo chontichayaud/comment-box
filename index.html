@@ -5,10 +5,11 @@
     <title>Project | comment Box</title>
   </head>
   <body>
+    <link rel="stylesheet" href="style.css">
     <header>
       <h1>Leave a comment</h1>
     </header>
-    <form>
+    <form onsubmit="return checkCommentLength()">
       <label>Name:</label><br>
       <input type="name" placeholder="Your name"><br>
       

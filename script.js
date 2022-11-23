@@ -15,3 +15,4 @@ function checkCommentLength() {
     document.getElementById("comment").style.borderColor = "black";
   }
  }
+ 
