@@ -16,8 +16,8 @@
       <input type="email" placeholder="Email"><br>
       
       <label>Comment:</label><br>
-      <textarea row="50" placeholder="Comment"></textarea><br>
-
+      <textarea row="50" placeholder="Comment" id="comment" oninput="updateCommentLength()"></textarea><br>
+      <p><span id="commentLength">0</span>/140</p>
       <button>Submit</button>
     </form>
     <script src="script.js"></script>
