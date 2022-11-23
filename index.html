@@ -11,15 +11,15 @@
     </header>
     <form onsubmit="return checkCommentLength()">
       <label>Name:</label><br>
-      <input type="name" placeholder="Your name"><br>
+      <input type="name" placeholder="Your name" id="name"><br>
       
       <label>Email:</label><br>
-      <input type="email" placeholder="Email"><br>
+      <input type="email" placeholder="Email" id="email"><br>
       
       <label>Comment:</label><br>
       <textarea row="50" placeholder="Comment" id="comment" oninput="updateCommentLength()"></textarea><br>
       <p><span id="commentLength">0</span>/140</p>
-      <button>Submit</button>
+      <button onclick="submit">Submit</button>
     </form>
     <script src="script.js"></script>
   </body>

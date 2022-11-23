@@ -4,9 +4,9 @@ function checkCommentLength() {
    if (comment.length > 140) {
     alert("The comment may have no more than 140 characters");
   }
- }
+}
   
- function updateCommentLength() {
+function updateCommentLength() {
   let comment = document.getElementById("comment").value;
   document.getElementById("commentLength").innerHTML = comment.length.toString();
    if (comment.length > 140) {
@@ -14,5 +14,14 @@ function checkCommentLength() {
   } else {
     document.getElementById("comment").style.borderColor = "black";
   }
- }
+}
  
+function displayComment() {
+  let data = "";
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let usercomment = document.getElementById("comment").value;
+   data = name +"<br>"+ email +"<br>"+ usercomment
+  
+  document.getElementById("data").innerHTML = data
+}
