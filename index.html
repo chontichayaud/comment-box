@@ -9,18 +9,22 @@
     <header>
       <h1>Leave a comment</h1>
     </header>
-    <form onsubmit="return checkCommentLength()">
+    <form onsubmit="return checkCommentLength();">
       <label>Name:</label><br>
-      <input type="name" placeholder="Your name" id="name"><br>
+      <input type="name" placeholder="Your name" name="userName"><br>
       
       <label>Email:</label><br>
-      <input type="email" placeholder="Email" id="email"><br>
+      <input type="email" placeholder="Email" name="userEmail"><br>
       
       <label>Comment:</label><br>
-      <textarea row="50" placeholder="Comment" id="comment" oninput="updateCommentLength()"></textarea><br>
+      <textarea name="userComment" row="50" placeholder="Comment" id="comment" oninput="updateCommentLength()"></textarea><br>
       <p><span id="commentLength">0</span>/140</p>
-      <button onclick="displayComment()">Submit</button>
+      <button  type="submit" id="addComment">Submit</button>
+    
     </form>
+    <div>
+
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
